@@ -1,0 +1,27 @@
+GoTech Home Assignment
+In this project you will a Dockerfile and deployment of a Rest Api.
+The emphasis of the assignment is correct architecture, using cloud resources and
+keeping it simple for both future maintenance and use.
+Project Details:
+1. The project is a git repo of a rest-api, built with Express.js & TypeScript
+https://github.com/gotech-io/gotech-assignment-api
+2. The API has 2 dependencies that it requires to run properly
+1. PostgreSQL database
+2. Redis cache
+3. The API exposes a GET request under the path of /health that validates both DB
+connection & Redis connection, returning HTTP 200 if everything is connected
+4. The API receives runtime parameters via environment variables
+5. All the knowledge you need to run the project locally is written in the README file
+6. All relevant commands for building/running the project can be found in the
+package.json file
+Assignment Details:
+1. Write a Dockerfile for this project, pay attention to docker image size, try to make
+it relatively small.
+2. Write a script or yaml to deploy the dockerized API to AWS cloud.
+this could be IoC as Terraform/Pulumi/AWS CDK or it could be a bash/python
+script that provisions the resources.
+3. One of the goals of this exercise is to make the deployment as easy to manage as
+possible, meaning we would prefer to use resources managed by AWS.
+4. Pay attention to architecture and structure.
+5 HaMelacha St., Poleg industry area, Netanya, Israel / Tel: +972-9-8664040
+https://gotech.io
